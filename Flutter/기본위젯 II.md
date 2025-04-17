@@ -10,7 +10,8 @@
       - [주요 속성](#주요-속성-2)
     - [DropDownButton](#dropdownbutton)
       - [주요 속성](#주요-속성-3)
-    - [다이얼로그](#다이얼로그)
+  - [다이얼로그](#다이얼로그)
+    - [AlertDialog](#alertdialog)
       - [주요 속성](#주요-속성-4)
 
 # 기본 위젯 II
@@ -201,10 +202,11 @@ body: Center(
 ```
 ![](https://i.imgur.com/1ke4M0M.gif)
 
-### 다이얼로그
+## 다이얼로그
+### AlertDialog
 사용자에게 중요한 정보를 알리고, 확인 또는 취소 등의 요청하는 팝업 창
 
-shoDialog()를 호출하면 현재 화면 위에 UI를 생성하여 다이얼로그를 띄운다.
+showDialog()를 호출하면 현재 화면 위에 UI를 생성하여 다이얼로그를 띄운다.
 
 Navigator.of(context).pop();을 통해 Flutter의 스택의 최상위 요소를 제거하여 다이얼로그를 닫는다.
 #### 주요 속성
