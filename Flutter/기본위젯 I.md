@@ -31,7 +31,6 @@ Flutter의 기본 위젯 I
 ## 화면 배치 위젯
 
 ### Container
----
 영역을 지정하고, 스타일을 입힐 수 있다.
 
 <!-- omit in toc -->
@@ -65,8 +64,10 @@ Flutter의 기본 위젯 I
 ```
 ![](https://i.imgur.com/awyAF5H.png)
 
-### Column, Row
 ---
+
+### Column, Row
+
 자식 위젯들을 수직, 수평 방향으로 정렬시킨다.
 
 <!-- omit in toc -->
@@ -113,8 +114,10 @@ Flutter의 기본 위젯 I
 ```
 ![](https://i.imgur.com/SwKrJ9L.png)
 
-### Stack
 ---
+
+### Stack
+
 자식 위젯들을 겹칠 수 있게 배치해준다.
 
 <!-- omit in toc -->
@@ -139,8 +142,10 @@ Flutter의 기본 위젯 I
 ```
 ![](https://i.imgur.com/08iejS0.png)
 
-### SingleChildScrollView
 ---
+
+### SingleChildScrollView
+
 전체 화면보다 데이터가 많을 때 스크롤을 제공해준다.
 
 <!-- omit in toc -->
@@ -168,8 +173,10 @@ Flutter의 기본 위젯 I
 
 이미지에는 안나오지만 터치시 스크롤이 나타난다.
 
-### ListView, ListTile
 ---
+
+### ListView, ListTile
+
 
 `ListView` : 스크롤이 가능한 리스트 목록을 만든다.
 
@@ -226,8 +233,10 @@ ListTile
 ```
 ![](https://i.imgur.com/z5qWya4.png)
 
-### GridView
 ---
+
+### GridView
+
 
 리스트를 그리드 형식으로 표시해준다.
 
@@ -248,8 +257,10 @@ ListTile
 ```
 ![](https://i.imgur.com/fR1uT0q.png)
 
-### PageView
 ---
+
+### PageView
+
 
 페이지 단위로 스크롤 하여 화면을 전환해주는 기능을 제공한다.
 
@@ -264,7 +275,7 @@ ListTile
 ```
 
 ### Tab 기반 UI
----
+
 AppBar, TabBar, Tab, TabBarView + 추가 위젯을 활용하여 Tab 기반 화면 전환 UI를 구성해보자.
 
 ![](https://i.imgur.com/SY77h1d.png)
@@ -329,10 +340,12 @@ AppBar, TabBar, Tab, TabBarView + 추가 위젯을 활용하여 Tab 기반 화�
 
 `bottomNavigationBar` : 앱 하단에 위치하여 여러 개의 탭을 제공
 
+---
+
 ## 위치, 정렬, 크기 위젯
 
 ### Center
----
+
 자식 위젯을 정중앙에 고정시킨다.
 
 ```dart
@@ -346,8 +359,10 @@ body: Center(
 ```
 ![](https://i.imgur.com/KFEv69t.png)
 
-### Padding
 ---
+
+### Padding
+
 안쪽 여백을 설정한다.
 
 `EdgeInsets` 클래스를 이용하여 여백 값을 정의한다.
@@ -364,8 +379,10 @@ body: Padding(
 ```
 ![](https://i.imgur.com/cX775LP.png)
 
-### Align
 ---
+
+### Align
+
 자식 위젯의 위치를 정렬할때 사용한다.
 
 <!-- omit in toc -->
@@ -384,8 +401,10 @@ body: Align(
 ```
 ![](https://i.imgur.com/KBWCSDE.png)
 
-### Expanded
 ---
+
+### Expanded
+
 자식 위젯의 크기를 최대한 확장시킨다.
 
 <!-- omit in toc -->
@@ -410,8 +429,10 @@ body: Column(
 ```
 ![](https://i.imgur.com/rGTp0sY.png)
 
-### SizedBox
 ---
+
+### SizedBox
+
 자식 위젯을 특정 크기로 고정시킨다.
 
 Container는 스타일을 추가할 수 있고, SizedBox는 크기만 조정한다.
@@ -433,8 +454,10 @@ body: SizedBox(
 ```
 ![](https://i.imgur.com/8omBHmK.png)
 
-### Card
 ---
+
+### Card
+
 자식 위젯을 카드 형태의 모양으로 스타일 할 수 있다. (그림자 깊이, 보더 종류, 모서리 라운드...)
 
 <!-- omit in toc -->
@@ -461,6 +484,8 @@ body: Center(
 ```
 ![](https://i.imgur.com/J4XW7po.png)
 
+---
+
 ## 버튼 계열 위젯
 `ElevatedButton` : 클릭 시 그림자 애니메이션이 생긴다.
 
@@ -482,9 +507,11 @@ body: Column(
 ```
 ![](https://i.imgur.com/DctunA8.png)
 
+---
+
 ## 화면 표시 위젯
 ### Text
----
+
 텍스트를 표시하는 위젯이다.
 
 <!-- omit in toc -->
@@ -507,8 +534,10 @@ body: Center(
 ```
 ![](https://i.imgur.com/zAtT3mq.png)
 
-### Image
 ---
+
+### Image
+
 이미지를 표시하는 위젯이다.
 
 pubspec.yaml 파일에서 assets을 설정해야 한다.
@@ -528,8 +557,10 @@ body: Image.asset('assets/flutter.png'),
 ```
 ![](https://i.imgur.com/uJHLeAl.png)
 
-### Icon
 ---
+
+### Icon
+
 아이콘을 표시하는 위젯이다.
 
 <!-- omit in toc -->
@@ -549,8 +580,10 @@ body: Icon(
 ```
 ![](https://i.imgur.com/7zoo74I.png)
 
-### Progress
 ---
+
+### Progress
+
 로딩을 표시한다.
 
 `CircularProgressIndicator()` : 원형 진행 로딩, 작업이 얼마나 진행되었는지 알 수 없을 때 사용
@@ -567,8 +600,10 @@ body: Column(
 ```
 ![](https://i.imgur.com/SiFlQT4.png)
 
-### CircleAvatar
 ---
+
+### CircleAvatar
+
 원형 프로필 이미지나, 아이콘을 표시한다.
 ```dart
 body: Center(
@@ -578,3 +613,5 @@ body: Center(
 ),
 ```
 ![](https://i.imgur.com/dKIx2hf.png)
+
+---
